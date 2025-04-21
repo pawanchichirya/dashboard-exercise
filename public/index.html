@@ -7,7 +7,7 @@
     <meta name="theme-color" content="#000000" />
     <meta
       name="description"
-      content="Web site created using create-react-app"
+      content="Stellar Dashboard - A responsive React admin dashboard"
     />
     <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
     <!--
@@ -24,7 +24,44 @@
       work correctly both with client-side routing and a non-root public URL.
       Learn how to configure a non-root public URL by running `npm run build`.
     -->
-    <title>React App</title>
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap"
+    />
+    <title>Stellar Dashboard</title>
+    <style>
+      body {
+        margin: 0;
+        padding: 0;
+        font-family: 'Roboto', sans-serif;
+      }
+      
+      /* Responsive modal styles */
+      .modal-responsive {
+        max-width: 100%;
+      }
+      
+      @media (max-width: 576px) {
+        .modal-dialog {
+          margin: 0.5rem auto;
+        }
+        .modal-body {
+          max-height: calc(100vh - 120px);
+          overflow-y: auto;
+        }
+      }
+      
+      /* Fix for Bootstrap dark mode input fields */
+      .form-control:focus,
+      .form-select:focus {
+        box-shadow: none;
+      }
+      
+      .form-control.bg-dark:focus,
+      .form-select.bg-dark:focus {
+        border-color: #6c757d;
+      }
+    </style>
   </head>
   <body>
     <noscript>You need to enable JavaScript to run this app.</noscript>
